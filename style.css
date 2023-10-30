@@ -1,0 +1,255 @@
+@media (max-width: 767px) {
+  main {
+    flex-direction: column;
+    padding: 5vw;
+  }
+  
+  .sneaker {
+    flex: 0 1 calc(95vw - 10px);
+    margin: 10px 0;
+    padding: 5vw;
+  }
+  
+  header {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Распределение по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+  }
+}
+/* Для средних и больших экранов (планшеты и десктопы) */
+@media (min-width: 768px) {
+  main {
+      padding: 2vw; /* 2% ширины экрана отступы на средних и больших экранах */
+  }
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(fonts/AnonymousPro-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1, h2, h3, p {
+  font-family: Anonymous Pro, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  text-align: center;
+  margin-top: 20px; /* Вы можете настроить отступ по своему усмотрению */
+}
+
+
+h2 {
+  font-size: 48px;
+}
+
+.container {
+  display: inline-block;
+  margin: 15px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 14px;
+}
+
+img {
+  max-width: 370px;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Выравнивание по вертикали */
+  margin: 0;
+}
+p {
+  font-family: Anonymous Pro, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+h3 {
+  font-family: Anonymous Pro, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+}
+.header {
+  font-family: Anonymous Pro, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+
+}
+.footer p, a {
+  font-family: Anonymous Pro, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.logo__line {
+  font-size: 56px;
+}
+
+body {
+  font-family: Anonymous Pro, Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  background-color:  #F1F1F1;
+}
+header {
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* выравнивание по вертикали */
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+.social-icons a {
+  color: white;
+}
+.header a {
+  color: black;
+}
+footer {
+  background-color: #121723;
+  color: white;
+  padding: 20px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header1 {
+  width: 1261px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+hr {
+  color: #E6E8EC66;
+  width: 1440px;
+  height: 1px;
+}
+.footer__copyright {
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 20px; /* Добавьте верхний отступ для разделения контента */
+  color: #A1A6B4;
+}
+
+.logo__line {
+  margin: 0;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Стили для блоков с кроссами */
+.sneaker {
+  border: 1px solid #ccc;
+  padding: 14px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 371px;
+  height: auto;
+}
+.sneaker__image {
+  max-width: 331px;
+}
+.container1, .container2, .container3 {
+  width: 1161px;
+  height: auto;
+  align-items: flex-start;
+  display: flex; 
+  flex-wrap: wrap;
+  margin: 24px;
+  justify-content: space-between;
+}
+.container0 {
+  box-sizing: border-box;
+  width: 1161px;
+  margin: auto;
+  padding: auto;
+}
+.title {
+  text-align: left;
+  margin-top: 20px;
+  font-family: Anonymous Pro, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  padding-left: 23px;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 767px) {
+  .sneaker {
+    flex-basis: 100%; /* На мобильных устройствах элементы будут занимать 100% ширины */
+  }
+}
+
+/* Стили для планшетов и десктопов */
+@media (min-width: 768px) {
+  .sneaker {
+    flex-basis: calc(33.333% - 20px); /* На планшетах и десктопах элементы будут занимать примерно треть доступной ширины */
+  }
+}
+/* Для больших экранов (большие десктопы) */
+@media (min-width: 1261px) {
+  .container1, .container2, .container3 {
+    width: 100%; /* или любой другой процент или фиксированное значение, которое вы хотите установить */
+  }
+
+  .sneaker {
+    flex-basis: calc(33.333% - 20px); /* элементы будут занимать примерно четверть доступной ширины */
+  }
+}
+
