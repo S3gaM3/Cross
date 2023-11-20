@@ -268,7 +268,46 @@ footer .nav-link {
 .big-sneaker-info-right-value p {
     font-size: 20px
 }
+@media screen and (max-width: 375px) {
+    .header-container,
+    .content,
+    .footer-content,
+    .container,
+    .big-sneaker-info-desc {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
+    .nav-list {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .sneaker,
+    .container,
+    .big-sneaker-info-right-about,
+    .big-sneaker-info-right {
+        width: 100%;
+    }
+
+    .sneaker-info,
+    .big-sneaker-info {
+        padding: 16px;
+    }
+
+    .big-sneaker-info-desc-left,
+    .big-sneaker-info-desc-right {
+        width: 100%;
+    }
+
+    h1, .big-sneaker-info h2, .big-sneaker-info h3 {
+        font-size: 36px;
+    }
+
+    .nav-link, p {
+        font-size: 18px;
+    }
+}
 @media screen and (max-width: 768px) and (pointer: coarse) and (hover: none) {
 
     .header-container {
